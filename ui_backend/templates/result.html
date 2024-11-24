@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detection Results</title>
+</head>
+<body>
+    <h2>Detection Results</h2>
+    <ul>
+        {% for item in detections %}
+        <li>{{ item['name'] }} - Confidence: {{ item['confidence'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Upload another image</a>
+</body>
+</html>

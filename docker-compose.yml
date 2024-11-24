@@ -1,0 +1,14 @@
+services:
+  ai_backend:
+    build: ./ai_backend
+    container_name: ai_backend
+    ports:
+      - "8000:8000"
+
+  ui_backend:
+    build: ./ui_backend
+    container_name: ui_backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - ai_backend

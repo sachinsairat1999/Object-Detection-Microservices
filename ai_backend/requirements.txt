@@ -1,0 +1,11 @@
+fastapi
+torch
+opencv-python-headless
+uvicorn
+numpy
+flask
+Pillow
+pandas
+requests
+python-multipart
+gunicorn
